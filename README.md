@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ## Running
 The framework starts with 5 levels for you to play around with. Run the game with:
 
-`python3.5 run.py`
+`python3.9 run.py`
 
 ## Configure
 The true power of this framework is the ability to configure the game to your liking.
