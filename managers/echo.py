@@ -38,7 +38,7 @@ class EchoService(object):
             if variable.value in message and variable.name not in context_variables and variable.name in message_router:
                 context_variables[variable.name] = message_router[variable.name](**context_variables)
 
-        formatted_message = message.format(**context_variables)
+        formatted_message = message.format_map(context_variables)
         self.console.printStr(formatted_message + "\n")
 
 

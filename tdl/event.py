@@ -382,7 +382,7 @@ def get():
             # this means you can break out of a event.get loop without losing
             # the leftover events
             yield(_eventQueue.pop(0))
-        raise StopIteration()
+        return
     _processEvents()
     return eventGenerator()
 
